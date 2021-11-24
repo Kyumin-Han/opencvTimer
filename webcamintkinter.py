@@ -40,10 +40,10 @@ def show_frames():
     label.configure(image=imgtk)
     # Repeat after an interval to capture continiously
     label.after(20, show_frames)
-    # cv2.imshow('frame',frame)
-    # if cv2.waitKey(1) & 0xFF == ord('q'):
-    #     cap.release()
-    #     cv2.destroyAllWindows()
+    cv2.imshow('frame',frame)
+#     if cv2.waitKey(1) & 0xFF == ord('q'):
+#         cap.release()
+#         cv2.destroyAllWindows()
 
 show_frames()
 win.mainloop()
